@@ -6,11 +6,7 @@ Bem-vindo(a) à minha central de links! Este é um projeto simples e responsivo 
 
 - Interface minimalista e responsiva
 - Suporte a modo claro/escuro 🌙☀️
-- Ícones interativos com [Ionicons](https://ionic.io/ionicons)
-- Links para:
-  - Portfólio
-  - Projetos no Figma
-  - Redes sociais
+- Links para projetos
 
 ## 🎨 Meu Figma
 
