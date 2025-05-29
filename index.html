@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matheus Abib - Figmas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification">Copiado!</div>
+
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/Eu.jpg" alt="Foto de Matheus Abib">
+      <p onclick="copyUsername()">@MatheusAbib</p>
+      <div id="welcome"></div>
+    </div>
+
+    <div id="switch" onclick="toggleTheme()"></div>
+
+    <ul id="linkList">
+      <li><a href="https://www.figma.com/design/8W7yZB7prvY3Kf4CRByuEG/Minist%C3%A9rio-do-Meio-Ambiente---redesign?node-id=0-1&t=15aE3SqvRoWE8gOn-1" target="_blank">Blog de notícias</a></li>
+      <li><a href="https://www.figma.com/design/FVyHI7iiOeZFx6nHpruJ3n/Calculadora-da-PDS---master?node-id=0-1&t=1b6lp4DyXiD38r6B-1" target="_blank">Calculadora PDS</a></li>
+      <li><a href="https://www.figma.com/design/doG1DauC0MTdzhOMUKHrS5/Web-Master?t=1b6lp4DyXiD38r6B-1" target="_blank">Site de presentes</a></li>
+      <li><a href="https://www.figma.com/design/CToVphWm8MeGIu0DylezpF/App-Enter?node-id=0-1&p=f&t=fzVArD40gLenMqCm-0" target="_blank">Tela de login</a></li>
+
+      <li><a href="#" onclick="openModal()">Sobre mim</a></li>
+    </ul>
+
+    <div id="social">
+      <a href="https://github.com/MatheusAbib" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+
+      <a href="https://matheus-portifolio.onrender.com" target="_blank"><ion-icon name="briefcase-outline"></ion-icon></a>
+    <a href="#" onclick="copyWhatsApp()"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      <a href="https://www.linkedin.com/in/matheusabib/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+
+    <footer>Feito por Matheus Abib</footer>
+  </div>
+
+  <!-- Modal -->
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Sobre mim</h2>
+      <p>Sou desenvolvedor web e designer UI/UX apaixonado por criar experiências modernas, acessíveis e interativas. Conheça meus projetos figma!</p>
+      <div class="modal-close" onclick="closeModal()">Fechar</div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
