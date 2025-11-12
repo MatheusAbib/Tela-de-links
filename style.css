@@ -140,6 +140,19 @@
       opacity: 0.8;
     }
 
+footer a {
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: var(--highlight);
+  transform: scale(1.02);
+}
+
+
   #welcome {
   margin-top: 16px;
   font-size: 16px;
