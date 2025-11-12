@@ -46,8 +46,11 @@ typeWriter(welcome, message);
     function copyWhatsApp() {
       const number = "+55 11975072008";
       navigator.clipboard.writeText(number).then(() => {
-        alert("Número de WhatsApp copiado!");
-      });
+      const notification = document.getElementById('notificationWttp');
+        notification.style.display = 'block';
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 2000);      });
     }
 
     // Fade-in ao rolar
