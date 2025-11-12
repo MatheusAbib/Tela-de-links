@@ -160,7 +160,7 @@
       top: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgb(0 0 0 / 20%);
       justify-content: center;
       align-items: center;
     }
@@ -170,7 +170,7 @@
       padding: 20px;
       border-radius: 8px;
       border: 1px solid var(--border-color);
-      max-width: 300px;
+      max-width: 30%;
       text-align: left;
       color: var(--text-color);
 
@@ -181,14 +181,18 @@
     }
 
     .modal-close {
-      margin-top: 15px;
+      margin-top: 10%;
       text-align: right;
       cursor: pointer;
       font-weight: bold;
       color: var(--highlight);
     }
 
-        #notification {
+    .modal-close:hover {
+      color: white;
+    }
+
+    #notification {
       position: fixed;
       top: 20px;
       right: 20px;
