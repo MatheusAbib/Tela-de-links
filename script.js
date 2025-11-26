@@ -26,9 +26,9 @@ const welcome = document.getElementById("welcome");
 const hour = new Date().getHours();
 let message = "";
 
-if (hour < 12) message = "Bom dia! Explore meus projetos feitos no Figma";
-else if (hour < 18) message = "Boa tarde! Explore meus projetos feitos no Figma";
-else message = "Boa noite! Explore meus projetos feitos no Figma";
+if (hour < 12) message = "Bom dia! Explore meus projetos feitos no Figma.";
+else if (hour < 18) message = "Boa tarde! Explore meus projetos feitos no Figma.";
+else message = "Boa noite! Explore meus projetos feitos no Figma.";
 
 typeWriter(welcome, message);
 

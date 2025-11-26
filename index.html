@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,44 +18,48 @@
     <div id="notificationWttp">Número Copiado!</div>
 
   <div id="container">
-    <div id="profile">
-      <img src="./assets/Eu.jpg" alt="Foto de Matheus Abib">
-      <p onclick="copyUsername()">@MatheusAbib</p>
-      <div id="welcome"></div>
+    <!-- Header -->
+    <div id="header">
+      <div id="username" onclick="copyUsername()">Matheus Abib</div>
+      <a href="#" onclick="openModal()" id="about-btn">Sobre mim</a>
+      <div id="theme-toggle" onclick="toggleTheme()"></div>
     </div>
 
-    <div id="switch" onclick="toggleTheme()"></div>
+    <!-- Content -->
+    <div id="content">
+      <div id="profile">
+        <img src="./assets/Eu.jpg" alt="Foto de Matheus Abib">
+        <div id="welcome"></div>
+      </div>
 
-    <ul id="linkList">
-      <li><a href="https://www.figma.com/design/8W7yZB7prvY3Kf4CRByuEG/Minist%C3%A9rio-do-Meio-Ambiente---redesign?node-id=0-1&t=15aE3SqvRoWE8gOn-1" target="_blank">Blog de notícias</a></li>
-      <li><a href="https://www.figma.com/design/FVyHI7iiOeZFx6nHpruJ3n/Calculadora-da-PDS---master?node-id=0-1&t=1b6lp4DyXiD38r6B-1" target="_blank">Calculadora PDS</a></li>
-      <li><a href="https://www.figma.com/design/doG1DauC0MTdzhOMUKHrS5/Web-Master?t=1b6lp4DyXiD38r6B-1" target="_blank">Site de presentes</a></li>
-      <li><a href="https://www.figma.com/design/CToVphWm8MeGIu0DylezpF/App-Enter?node-id=0-1&p=f&t=fzVArD40gLenMqCm-0" target="_blank">Tela de login</a></li>
-      <li><a href="https://www.figma.com/design/oSLh7J3OQgQ0iJnMglLqkw/Untitled?node-id=0-1&t=0Q7NI7u89mVytK53-1" target="_blank">Site de esportes</a></li>
+      <ul id="linkList">
+        <li><a href="https://www.figma.com/design/8W7yZB7prvY3Kf4CRByuEG/Minist%C3%A9rio-do-Meio-Ambiente---redesign?node-id=0-1&t=15aE3SqvRoWE8gOn-1" target="_blank">Blog de notícias</a></li>
+        <li><a href="https://www.figma.com/design/FVyHI7iiOeZFx6nHpruJ3n/Calculadora-da-PDS---master?node-id=0-1&t=1b6lp4DyXiD38r6B-1" target="_blank">Calculadora PDS</a></li>
+        <li><a href="https://www.figma.com/design/doG1DauC0MTdzhOMUKHrS5/Web-Master?t=1b6lp4DyXiD38r6B-1" target="_blank">Site de presentes</a></li>
+        <li><a href="https://www.figma.com/design/CToVphWm8MeGIu0DylezpF/App-Enter?node-id=0-1&p=f&t=fzVArD40gLenMqCm-0" target="_blank">Tela de login</a></li>
+        <li><a href="https://www.figma.com/design/oSLh7J3OQgQ0iJnMglLqkw/Untitled?node-id=0-1&t=0Q7NI7u89mVytK53-1" target="_blank">Site de esportes</a></li>
+      </ul>
 
-      <li><a href="#" onclick="openModal()">Sobre mim</a></li>
-    </ul>
+      <div id="social">
+        <a href="https://github.com/MatheusAbib" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://matheus-abib-portifolio.up.railway.app/" target="_blank"><ion-icon name="briefcase-outline"></ion-icon></a>
+        <a href="#" onclick="copyWhatsApp()"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/matheusabib/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
 
-    <div id="social">
-      <a href="https://github.com/MatheusAbib" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-
-      <a href="https://matheus-abib-portifolio.up.railway.app/" target="_blank"><ion-icon name="briefcase-outline"></ion-icon></a>
-    <a href="#" onclick="copyWhatsApp()"><ion-icon name="logo-whatsapp"></ion-icon></a>
-      <a href="https://www.linkedin.com/in/matheusabib/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <footer>Feito por <a href="https://matheus-abib-portifolio.up.railway.app/" target="_blank" style="color: var(--text-color);">Matheus Abib</a></footer>
     </div>
-
-    <footer>Feito por <a href="https://matheus-abib-portifolio.up.railway.app/" target="_blank" style="color: var(--text-color);">Matheus Abib</a></footer>
   </div>
 
   <!-- Modal -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <h2>Sobre mim</h2>
-      <p>Sou desenvolvedor web e designer UI/UX apaixonado por criar experiências modernas, acessíveis e interativas. Conheça meus projetos figma!</p>
+      <p>Sou desenvolvedor de software e designer UI/UX que sempre busca criar experiências modernas, acessíveis e interativas. Conheça meus projetos figma!</p>
       <div class="modal-close" onclick="closeModal()">Fechar</div>
     </div>
   </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
